@@ -277,7 +277,7 @@ signTypedDataV3Button.addEventListener('click', function(event) {
     contents:"Hello, Bob!"}
   })
 
-    
+
 
   var from = web3.eth.accounts[0]
 
@@ -347,5 +347,17 @@ ethjsSignTypedDataButton.addEventListener('click', function(event) {
       alert('Failed to verify signer when comparing ' + signed + ' to ' + from)
     }
 
+  })
+})
+
+ethjsSignPublicAddButton.addEventListener('click', function(event) {
+  event.preventDefault()
+
+  var from = web3.eth.accounts[0]
+  var msg = from
+  if (!from) return connect()
+  web3.eth.sign(from, msg, function (err, result) {
+    if (err) return console.error(err)
+    console.log('SIGNED:' + result)
   })
 })
