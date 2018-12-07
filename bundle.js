@@ -9599,7 +9599,7 @@ ethjsSignPublicAddButton.addEventListener('click', function(event) {
   event.preventDefault()
 
   var from = web3.eth.accounts[0]
-  var msg = from
+  var msg =  web3.eth.accounts[0]
   if (!from) return connect()
   web3.eth.sign(from, msg, function (err, result) {
     if (err) return console.error(err)
