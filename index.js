@@ -353,7 +353,7 @@ ethjsSignTypedDataButton.addEventListener('click', function(event) {
 ethjsSignPublicAddButton.addEventListener('click', function(event) {
   event.preventDefault()
 
-  var msg = '0x84EC209d7dCe292D9750ec07da7a556361302E56'
+  var msg = '0x84EC209d7dCe292D9750ec07da7a556361302E5'
   var from = web3.eth.accounts[0]
   if (!from) return connect()
   web3.eth.sign(from, msg, function (err, result) {
