@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flyswatter/js-eth-personal-sign-examples.git"
+    "url": "git+https://github.com/emiller88/js-eth-personal-sign-examples.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/flyswatter/js-eth-personal-sign-examples/issues"
+    "url": "https://github.com/emiller88/js-eth-personal-sign-examples/issues"
   },
-  "homepage": "https://github.com/flyswatter/js-eth-personal-sign-examples#readme",
+  "homepage": "https://github.com/emiller88/js-eth-personal-sign-examples#readme",
   "dependencies": {
     "eth-sig-util": "^2.1.0",
     "ethereumjs-util": "^5.1.1",
